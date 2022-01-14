@@ -59,6 +59,7 @@ button {
     width: 5em;
     border: 2px solid black;
     background-color: #d6cfc7;
+    
 }
 
 
@@ -66,6 +67,7 @@ button {
     width: 5em;
     border: 2px solid black;
     background-color: #d6cfc7;
+    
 }
 
 .eraseBtn {
@@ -81,19 +83,62 @@ button {
 }
 
 button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 
 .active {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: mediumspringgreen;
 }
 
 #sizeValue {
     color: mediumspringgreen;
     line-height: 0;
-    margin: 0;
+    margin-top: 5px;
     font-size: 30px;
     font-family: Teko, sans-serif;
+}
+
+
+@media (max-width: 1200px) {
+    .main {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .main {
+        gap: 50px;
+    }
+
+    .settings {
+        width: 150px;
+        gap: 16px;
+    }
+
+    .sizeValue {
+        margin-bottom: -4px;
+    }
+
+    .grid {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 60px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .grid {
+        width: 300px;
+        height: 300px;
+    }
 }
