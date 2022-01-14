@@ -102,4 +102,4 @@ window.onload = () => {
 }
 
 
-setUpGrid(16);
+
